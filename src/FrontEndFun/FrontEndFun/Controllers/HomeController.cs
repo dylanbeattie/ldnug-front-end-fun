@@ -16,5 +16,10 @@ namespace FrontEndFun.Controllers
             return View();
         }
 
+        public ActionResult Styles() {
+            return (View());
+
+        }
+
     }
 }
