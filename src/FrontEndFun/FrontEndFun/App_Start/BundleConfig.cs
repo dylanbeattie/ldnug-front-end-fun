@@ -1,9 +1,30 @@
 ﻿using System.Web;
 using System.Web.Optimization;
+using BundleTransformer.Core.Transformers;
 
 namespace FrontEndFun {
     public class BundleConfig {
+
+        private static void RegisterScssBundle(BundleCollection bundles) {
+
+            var scssBundle = new StyleBundle("~/bundles/styles")
+                .Include("~/Content/Styles/styles.scss");
+            scssBundle.Transforms.Add(new CssTransformer());
+            bundles.Add(scssBundle);
+        }
+
+        private static void RegisterCoffeeBundle(BundleCollection bundles) {
+            var bundle = new ScriptBundle("~/bundles/coffee")
+                .Include("~/Scripts/examples.coffee");
+            bundle.Transforms.Add(new JsTransformer());
+            bundles.Add(bundle);
+        }
+
         public static void RegisterBundles(BundleCollection bundles) {
+
+            RegisterScssBundle(bundles);
+            RegisterCoffeeBundle(bundles);
+
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-1.*"));
 
