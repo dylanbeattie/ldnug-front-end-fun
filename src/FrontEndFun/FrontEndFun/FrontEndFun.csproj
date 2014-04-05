@@ -148,6 +148,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\_settings.scss" />
+    <None Include="Content\_grid960.scss" />
     <Content Include="Content\styles.css">
       <DependentUpon>styles.scss</DependentUpon>
     </Content>
@@ -178,6 +180,7 @@
     <Content Include="Content\themes\base\jquery.ui.slider.css" />
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <None Include="Content\_reset.scss" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.2.js" />

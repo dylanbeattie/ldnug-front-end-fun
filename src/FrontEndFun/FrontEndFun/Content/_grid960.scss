@@ -1,0 +1,55 @@
+﻿/*
+* 960 grid 
+* Based on Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+.container { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+.container .column, .container .columns { float: left; display: inline; margin-left: 10px; margin-right: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.row { margin-bottom: 20px; }
+
+/* Nested Column Classes */
+.column.alpha, .columns.alpha { margin-left: 0; }
+.column.omega, .columns.omega { margin-right: 0; }
+
+/* Base Grid */
+.container .one.column, .container .one.columns { width: 40px; }
+.container .two.columns { width: 100px; }
+.container .three.columns { width: 160px; }
+.container .four.columns { width: 220px; }
+.container .five.columns { width: 280px; }
+.container .six.columns { width: 340px; }
+.container .seven.columns { width: 400px; }
+.container .eight.columns { width: 460px; }
+.container .nine.columns { width: 520px; }
+.container .ten.columns { width: 580px; }
+.container .eleven.columns { width: 640px; }
+.container .twelve.columns { width: 700px; }
+.container .thirteen.columns { width: 760px; }
+.container .fourteen.columns { width: 820px; }
+.container .fifteen.columns { width: 880px; }
+.container .sixteen.columns { width: 940px; }
+
+.container .one-third.column { width: 300px; }
+.container .two-thirds.column { width: 620px; }
+
+/* Offsets */
+.container .offset-by-one { margin-left: 60px; }
+.container .offset-by-two { margin-left: 120px; }
+.container .offset-by-three { margin-left: 180px; }
+.container .offset-by-four { margin-left: 240px; }
+.container .offset-by-five { margin-left: 300px; }
+.container .offset-by-six { margin-left: 360px; }
+.container .offset-by-seven { margin-left: 420px; }
+.container .offset-by-eight { margin-left: 480px; }
+.container .offset-by-nine { margin-left: 540px; }
+.container .offset-by-ten { margin-left: 600px; }
+.container .offset-by-eleven { margin-left: 660px; }
+.container .offset-by-twelve { margin-left: 720px; }
+.container .offset-by-thirteen { margin-left: 780px; }
+.container .offset-by-fourteen { margin-left: 840px; }
+.container .offset-by-fifteen { margin-left: 900px; }

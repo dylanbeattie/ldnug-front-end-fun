@@ -1,4 +1,56 @@
-body
-{
-color: #ff0000;
+@import 'reset';
+@import 'grid960';
+@import 'settings';
+
+@mixin columns($count) {
+    float: left; 
+    display: inline; 
+    margin-left: 10px; 
+    margin-right: 10px;
+    width: (40px * $count) + (($count - 1) * 20);
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+@mixin offset($count) {
+    margin-left: 10 + (60 * $count)px;
+}
+
+@mixin rounded-corners() {
+  -webkit-border-radius: $border-radius;
+     -moz-border-radius: $border-radius;
+      -ms-border-radius: $border-radius;
+          border-radius: $border-radius;
+	padding: 10px;
+}
+
+header {
+	@include columns(16);
+	@include rounded-corners();
+	background-color: $brand-color;
+	height: 80px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+nav {
+	@include columns(3);
+	@include rounded-corners();
+	background-color: #f0f;
+}
+
+article {
+	@include columns(13);
+	@include rounded-corners();
+	background-color: #ff0;
+	h1 {
+		color: $brand-color;
+	}	
+}
+
+footer {
+	@include columns(16);
+	@include rounded-corners();
+	background-color: $brand-color;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
